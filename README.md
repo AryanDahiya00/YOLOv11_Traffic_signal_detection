@@ -77,10 +77,10 @@ The dataset underwent several preprocessing steps before training:
 2. **Preprocessing Steps**:
    - Conversion of CSV annotations to yaml format
    - Conversion of YAML annotations to YOLOv11-compatible format
-   - Cross-checking of images and their corresponding annotations
    - Class consolidation: Compressed 6 original classes into 3 main categories
    - Data cleaning: Removed images and annotations with no objects
    - Class imbalance handling through strategic compression
+   - Cross-checking of images and their corresponding annotations
 
 ## Model Training Pipeline
 1. **Data Split**: 
