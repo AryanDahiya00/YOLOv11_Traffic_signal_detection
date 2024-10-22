@@ -10,6 +10,13 @@ This project implements a real-time traffic signal detection system using the YO
   2. Stop (Red Signal)
   3. Warning (Yellow/Amber Signal)
 
+
+## Additional Test Video:
+  - Source: [Traffic Signal Footage](https://youtu.be/iS5sq9IELEo?si=XFx0AVWQN5MTtQ86)
+  - Usage: Small portion extracted for model testing
+  - Purpose: Real-world performance validation
+  - Note: Video used solely for educational and testing purposes with appropriate attribution
+
 ### Dataset Structure
 ```
 dataset/
@@ -69,7 +76,7 @@ The dataset underwent several preprocessing steps before training:
 
 2. **Preprocessing Steps**:
    - Conversion of YAML annotations to YOLOv11-compatible format
-   - Separation of images and their corresponding annotations
+   - Cross-checking of images and their corresponding annotations
    - Class consolidation: Compressed 6 original classes into 3 main categories
    - Data cleaning: Removed images and annotations with no objects
    - Class imbalance handling through strategic compression
@@ -84,10 +91,26 @@ The dataset underwent several preprocessing steps before training:
    - Implemented custom training for traffic signal detection
    - Evaluated model performance using mAP (mean Average Precision)
 
+## Testing Methodology
+1. **Dataset Testing**:
+   - Evaluation on held-out test set from original dataset
+   - Performance metrics calculation on static images
+
+2. **Real-world Testing**:
+   - Additional validation using extracted video segments
+   - Source: YouTube video clip ([Link](https://youtu.be/iS5sq9IELEo?si=XFx0AVWQN5MTtQ86))
+   - Testing scenarios:
+     - Various lighting conditions
+     - Different traffic signal configurations
+     - Real-world traffic scenarios
+
 ## Performance Metrics
 Detailed performance metrics and evaluation results can be found in the 'results' folder of the project repository.
 
-
+## Acknowledgments
+- Original training dataset:  [LISA Traffic Light Dataset](https://www.kaggle.com/datasets/mbornoe/lisa-traffic-light-dataset)
+- Test video footage: Partial clip from [Traffic Signal Video](https://youtu.be/iS5sq9IELEo?si=XFx0AVWQN5MTtQ86)
+  
 ## Notes
 - The dataset provided includes preprocessed images ready for training
 - Performance metrics and detailed evaluation results are documented in the results folder
