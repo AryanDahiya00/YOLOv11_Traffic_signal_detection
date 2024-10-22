@@ -75,6 +75,7 @@ The dataset underwent several preprocessing steps before training:
 1. **Data Source**: Original dataset was sourced from the [LISA Traffic Light Dataset](https://www.kaggle.com/datasets/mbornoe/lisa-traffic-light-dataset)
 
 2. **Preprocessing Steps**:
+   - Conversion of CSV annotations to yaml format
    - Conversion of YAML annotations to YOLOv11-compatible format
    - Cross-checking of images and their corresponding annotations
    - Class consolidation: Compressed 6 original classes into 3 main categories
