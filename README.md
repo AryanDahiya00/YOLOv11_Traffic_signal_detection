@@ -83,36 +83,12 @@ The detection system employs YOLOv11 with the following specifications:
 
 ### Detection Classes
 1. Traffic Signs:
-   - Stop
-   - Yield
-   - Speed limits
-   - Warning signs
-   - Regulatory signs
+   - 73 classes
 
 2. Traffic Signals:
    - Red light
    - Yellow light
    - Green light
-   - Arrow signals
-
-## Installation and Usage
-
-```bash
-# Clone the repository
-git clone https://github.com/username/traffic-detection.git
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run preprocessing
-python data_preprocessing/preprocess.py
-
-# Train the model
-python train.py --config config/yolov11.yaml
-
-# Run inference
-python detect.py --source path/to/image --weights weights/best.pt
-```
 
 ## Requirements
 - Python 3.8+
@@ -128,19 +104,6 @@ python detect.py --source path/to/image --weights weights/best.pt
 - Extended class support
 - Real-time edge device deployment
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Citation
-If you use this model in your research, please cite:
-```
-@article{trafficsigndetection2024,
-  title={Traffic Sign and Signal Detection using YOLOv11},
-  author={Your Name},
-  journal={arXiv preprint},
-  year={2024}
-}
-```
 
 ## Contact
-For any queries or suggestions, please open an issue in the repository or contact [your-email@domain.com].
+For any queries or suggestions, please open an issue in the repository.
